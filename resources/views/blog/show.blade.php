@@ -10,13 +10,15 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container">
-    <div class="wrapper">
-        <h1>Category</h1>
+<div style="padding: 40px">
+    <div class="container" style="width: 270px;margin: auto;">
+       <div style="display: flex;"><h5 style="margin-right: 10px;">Category Info</h5> <a href="{{route('category.index')}}" type="button" class="btn btn-primary mb-3">Back</a></div>
+        <ul style="list-style: none; display: flex;justify-content: space-around; padding: 7px;border: 1px solid black">
+            <li style="color: #0a041a">{{ $category->id }}</li>
+            <li style="color: crimson">{{ $category->name }}</li>
+        </ul>
     </div>
-    <div>
-      @yield('content')
-    </div>
+
 </div>
 <script src="https://getbootstrap.com/docs/5.2/examples/checkout/form-validation.js"></script>
 <!-- JavaScript Bundle with Popper -->

@@ -1,4 +1,3 @@
-alert('hello');
 $(document).ready(function(){
    $('#signUpBtn').click(function () {
        $.ajax(
